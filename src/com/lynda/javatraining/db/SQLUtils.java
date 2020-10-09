@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class SQLUtils {
 
-    public static void displayData(ResultSet resultSet){
+    public static void displayCharCollumn(ResultSet resultSet){
 
           try{
              while(resultSet.next()){
@@ -13,6 +13,9 @@ public class SQLUtils {
                  my_rows.append("Row: " + resultSet.getNString("STATEID") + ":");
                  System.out.println(my_rows.toString());
              }
+              resultSet.last();
+              System.out.println("num rows" + resultSet.getRow()    );
+
           }catch (SQLException se){
              se.printStackTrace();
           }

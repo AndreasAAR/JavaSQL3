@@ -11,7 +11,7 @@ public class MainClass {
                  ResultSet rs = stmt.executeQuery("SELECT stateId, statename FROM states");
                     ) {
 
-                SQLUtils.displayData(rs);
+                SQLUtils.displayCharCollumn(rs);
 
             } catch (SQLException throwables) {
                 DataBaseHandler.processException(throwables);
