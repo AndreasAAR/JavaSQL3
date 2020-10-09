@@ -3,7 +3,7 @@ package com.lynda.javatraining.db;
 import java.sql.*;
 //Database
 
-enum DBType{
+public enum DBType{
    HSQDLB, MYSQL
 }
 
