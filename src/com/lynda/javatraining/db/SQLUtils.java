@@ -15,6 +15,8 @@ public class SQLUtils {
              }
               resultSet.last();
               System.out.println("num rows" + resultSet.getRow()    );
+              resultSet.first();
+              System.out.println("The first entry state NAME is: " +resultSet.getString("stateName"));
 
           }catch (SQLException se){
              se.printStackTrace();

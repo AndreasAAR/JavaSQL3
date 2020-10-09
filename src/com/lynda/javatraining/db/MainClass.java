@@ -8,7 +8,8 @@ public class MainClass {
             try (
                  Connection   conn = DataBaseHandler.createConnection(DBType.HSQDLB);
                  Statement  stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-                 ResultSet rs = stmt.executeQuery("SELECT stateId, statename FROM states");
+                 ResultSet rs = stmt.executeQuery("SELECT stateId, statename FROM states " +
+                         "LIMIT 5");
                     ) {
 
                 SQLUtils.displayCharCollumn(rs);
