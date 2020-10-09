@@ -22,4 +22,9 @@ public class InputHelper {
         return Double.parseDouble(input);
     }
 
+    public static Integer getIntegerInput(String promt) throws NumberFormatException{
+        String input = getInput(promt);
+        return Integer.parseInt(input);
+    }
+
 }

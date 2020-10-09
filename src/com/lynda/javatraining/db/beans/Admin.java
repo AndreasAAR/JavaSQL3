@@ -54,6 +54,7 @@ public class Admin implements Serializable { //Can be instanced in a DB
                  bean.setAdminID(adminID);
                  bean.setUserName(rs.getString("userName"));
                  bean.setPassword(rs.getString("password"));
+                 return  bean;
              }else{
                  System.err.println("No rows were found");
                  return null;
