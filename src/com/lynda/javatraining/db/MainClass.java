@@ -22,7 +22,7 @@ public class MainClass {
                     ){
                 stmt.setDouble(1,maxPrice);
                 rs = stmt.executeQuery(); //Put requests directly in via SQL,
-                SQLUtils.displayCharCollumn(rs,"tourname");
+                SQLUtils.displayData(rs,"tourID");
                 //Best for bandwith!
                // SQLUtils.displayCharCollumn(rs);
             } catch (SQLException throwables) {
