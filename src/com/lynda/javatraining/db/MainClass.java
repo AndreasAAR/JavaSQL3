@@ -11,15 +11,16 @@ public class MainClass {
                  ResultSet rs = stmt.executeQuery("SELECT stateId, statename FROM states");
                     ) {
 
-                System.out.println("Connected!");
-
-                rs.last();
-                System.out.println("number of rows:" + rs.getRow());
+                SQLUtils.displayData(rs);
 
             } catch (SQLException throwables) {
                 DataBaseHandler.processException(throwables);
             }
-            
+
         }
 
-    }
+
+
+
+}
+
