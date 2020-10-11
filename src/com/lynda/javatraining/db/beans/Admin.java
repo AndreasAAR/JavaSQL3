@@ -4,10 +4,7 @@ import com.lynda.javatraining.db.DBType;
 import com.lynda.javatraining.db.DataBaseHandler;
 
 import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Admin implements Serializable { //Can be instanced in a DB
     // For updating and deleting
@@ -34,6 +31,8 @@ public class Admin implements Serializable { //Can be instanced in a DB
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 
     //Represents a row of data
         private int adminID;
